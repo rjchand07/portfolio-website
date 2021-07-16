@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+:root {
+    --primaryColor: #202c39;
+    --secondaryColor: #283845;
+    --fontPrimary: #eff1f3;
+    --fontSecondary: #dbd3d8;
+    --font3: #d8b4a0;
+    --font4: #f9564f;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondaryColor);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    margin: 10px 0;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--primaryColor);
+    color: var(--fontPrimary);
+    height: 70px;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar a {
+    color: var(--fontPrimary);
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 1px solid white;
+  }
+  
+  .navbar .flex {
+    justify-content: space-between;
+  }
+
+
+
+  .navbar .logo{
+      font-weight: 600;
+      font-size: 2.5rem;
+      cursor: pointer;
+  }
+  .navbar a{
+      color: var(--font3);
+  }
+
+/* Showcase */
+
+.showcase {
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontPrimary);
+    position: relative;
+}
+
+.showcase .intro-span {
+    color: var(--fontPrimary);
+    font-weight: 600;
+}
+.showcase h1 {
+    font-size: 40px;
+    color: #f0e6ef;
+  }
+.showcase p {
+    font-size: 26.8px;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    color: #f0e6ef;
+}
+
+
+.intro-image{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+
+}
+.button {
+    border-radius: 4px;
+    background-color:var(--fontPrimary);
+    border: none;
+    color: var(--primaryColor);
+    padding: 10px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    width: 125px;
+    font-weight: bolder;
+    font-size: 17px;
+    transition: all 0.5s ease;
+  }
+  
+  .button:hover {
+      background-color: var(--primaryColor);
+      color: var(--fontPrimary);
+      font-size: 20px;
+  }
+
+  /* Footer */
+  .footer {
+      background-color: var(--primaryColor);
+      color: var(--fontPrimary);
+      padding: 4rem 0rem;
+  }
+  .footer h1{
+      cursor: pointer;
+  }
+  .footer .navlinks:hover{
+      border-bottom: 1px solid white;
+  }
+
+  .footer .social a:hover{
+    opacity: 0.8;
+    color: var(--fontPrimary);
+  }
+
+  .footer a, .footer .social {
+      color: var(--fontPrimary);
+  }
+  .social a {
+      margin-left:15px;
+  }
+  .footer h1 {
+      color: white;
+      font-weight: 600;
+  }
+.footer a, .social,p {
+    color: var(--font3);
+}
+
+
+/* Workbook */
+
+.workbook {
+    color: var(--fontPrimary);
+}
+
+.freelancer-heading{
+    margin: 1rem 0;
+    font-size: 30px;
+    font-weight: 200;
+}
+.freelancer-heading span{
+    color: var(--font3);
+}
+.freelance-span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.workbook h4{
+    color: var(--font4);
+    font-size: 25px;
+}
+
+.workbook i{
+    margin: 1.5rem 0;
+}
+
+/* Languages */
+
+.languages {
+    color: var(--fontPrimary);
+}
+
+.skillset {
+    margin: 1rem 0;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.languages img {
+    height: 90px;
+    width: 90px;
+}
+.card {
+    text-align: center;
+}
+.card h4{
+    margin: 10px;
+}
