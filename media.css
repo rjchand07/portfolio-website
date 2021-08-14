@@ -7,6 +7,7 @@
     }
     .navbar ul{
         padding: 5px;
+        margin: 0 20px;
     }
   
     .navbar ul li {
@@ -18,9 +19,13 @@
         align-items: center;
         height: auto;
     }
-.footer h1,p,ul{
+    .footer h1,p,ul{
     margin-left: 30px;
-}
+    }  
+    .footer .social{
+        margin-right:20px;
+    }
+
     .languages .flex {
         flex-direction: column;
     }
