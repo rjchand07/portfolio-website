@@ -20,7 +20,7 @@
         height: auto;
     }
     .footer h1,p,ul{
-    margin-left: 30px;
+        margin-left: 30px;
     }  
     .footer .social{
         margin-right:20px;
@@ -29,6 +29,7 @@
     .languages .flex {
         flex-direction: column;
     }
+    
 }
 
 @media(max-width: 768px) {
