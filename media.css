@@ -1,21 +1,26 @@
 @media (max-width: 500px) {
     .navbar{
-        height: 115px;
+        height: 135px;
     }
     .navbar .flex{
-        flex-direction: column;
-        
+        flex-direction: column;    
     }
     .navbar ul{
-        padding: 10px;
-        background-color: rgba(0,0,0, 0.1);
-        overflow: auto;
+        padding: 5px;
     }
+  
+    .navbar ul li {
+        margin-left: 5px;
+    }
+
     .footer {
         justify-content: center;
         align-items: center;
         height: auto;
     }
+.footer h1,p,ul{
+    margin-left: 30px;
+}
     .languages .flex {
         flex-direction: column;
     }
@@ -37,7 +42,28 @@
     .intro-image{
         height: 100px;
         width: 100px;
-        margin: auto;
-        animation: slideInFromBottom 1s ease-in;
+        margin: 10px 150px;
+        margin-bottom: 40px;
     }
+    .workbook{
+        height: auto;
+        margin-top: 20px;
+    }
+    .workbook .grid3{
+        text-align: center;
+    }
+    .workbook i,h4{
+        margin: 10px 155px;
+    }
+   
+    .workbook h3{
+        font-size: 20px;
+    }
+    .freelance-span{
+        font-size: 25px;
+    }
+    nav {
+        overflow: hidden;
+    }
+
 }
