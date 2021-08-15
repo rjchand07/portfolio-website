@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 :root {
-    --primaryColor: #202c39;
-    --secondaryColor: #283845;
-    --fontPrimary: #eff1f3;
-    --fontSecondary: #dbd3d8;
-    --font3: #d8b4a0;
-    --font4: #d1827f;
+    --primaryColor: #000000;
+    --secondaryColor: #14213d;
+    --fontPrimary: #fca311;
+    --fontPriHover: #ffd60a;
+    --fontSecondary: #e5e5e5;
+    --font3: #ffffff;
 
 }
 
@@ -58,7 +58,7 @@ h2 {
   }
   
 .navbar a {
-    color: var(--font3);
+    color: var(--fontPriHover);
     padding: 10px;
     margin: 0 20px;
     text-transform: uppercase;
@@ -74,8 +74,8 @@ h2 {
       left: 0%;
       width: 100%;
       height: 100%;
-      border-top: 2px solid var(--font3);
-      border-bottom: 2px solid var(--font3);
+      border-top: 2px solid var(--fontPriHover);
+      border-bottom: 2px solid var(--fontPriHover);
       transform: scaleY(2);
       opacity: 0;
       transition: .3s;
@@ -88,15 +88,15 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--font3);
+    background-color: var(--fontPriHover);
     transform: scale(0);
     opacity: 0;
-    transition: .3s;
+    transition: 0.3s;
     z-index: -1;
   }
   
   .navbar a:hover {
-      color: var(--fontPrimary);
+      color: var(--primaryColor);
   }
   .navbar a:hover:before{
     transform: scaleY(1);
@@ -117,7 +117,7 @@ h2 {
     transition: 0.5s ease;  
   }
   .navbar .logo:hover{
-    color: var(--font3);
+    color: var(--fontPriHover);
   }
 /* Showcase */
 
@@ -156,19 +156,19 @@ h2 {
     content: '';
     width: 50%;
     height: 100%;
-    background: var(--font3);
+    background: var(--primaryColor);
     position: absolute;
     transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     top: 0%;
     left: 0%;
 }
 .btn-hire .text-hire{
-    color: var(--fontPrimary);
+    color:var(--font3);
     mix-blend-mode: difference;
 }
 .btn-hire:hover::before{
     width: 100%;
-    background-color: var(--font3);
+    background-color: var(--primaryColor);
 }
 .intro-image{
     width: 300px;
@@ -267,7 +267,7 @@ h2 {
   /* Footer */
   .footer {
       background-color: var(--primaryColor);
-      color: var(--fontPrimary);
+      color: var(--fontPriHover);
       padding: 5rem 0rem;
       height: auto;
   }
@@ -275,6 +275,7 @@ h2 {
 
   .footer .navlinks{
       font-weight: 600;
+      color: var(--fontPriHover);
   }
   .footer .navlinks:hover{
       opacity: 0.8;
@@ -282,7 +283,7 @@ h2 {
   }
   
   .footer a .social {
-      color: var(--fontPrimary);
+      color: var(--font3);
   }
   .footer h1 {
       color: white;
@@ -313,8 +314,8 @@ h2 {
     border-radius: 50%;
     overflow: hidden;
     z-index: 1;
-    background-color: var(--fontPrimary);
-    border: 3px solid var(--fontPrimary);
+    background-color: var(--font3);
+    border: 3px solid var(--font3);
     position: relative;
 }
 
@@ -326,7 +327,7 @@ h2 {
 }
 
 .footer .social ul li a:hover .icon{
-    color: var(--fontPrimary);
+    color: var(--font3);
     transform: rotateY(360deg);
 }
 
@@ -337,7 +338,6 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #f00;
   transition: .5s;
   z-index: 2;
 }
@@ -384,7 +384,7 @@ h2 {
 }
 
 .workbook h4{
-    color: var(--font4);
+    color: var(--font3);
     font-size: 20px;
     font-weight: 600;
 }

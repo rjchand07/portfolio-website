@@ -30,8 +30,8 @@
 }
 
 .card {
-    background-color: #9E7777;
-    color: #261C2C;
+    background-color:var(--font3);
+    color: var(--primaryColor);
     border-radius: 5px;
     padding: 10px;
     margin: 25px 10px ;
