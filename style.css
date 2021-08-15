@@ -182,6 +182,7 @@ h2 {
       background-color: var(--primaryColor);
       color: var(--fontPrimary);
       padding: 5rem 0rem;
+      height: auto;
   }
  
 
@@ -279,24 +280,26 @@ h2 {
 
 .workbook {
     color: var(--fontPrimary);
+    height: auto;
+    overflow: hidden;
 }
 
 .freelancer-heading{
     margin: 1rem 0;
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 400;
 }
 .freelancer-heading span{
     color: var(--font3);
 }
 .freelance-span {
-    font-size: 40px;
     font-weight: 600;
 }
 
 .workbook h4{
     color: var(--font4);
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .workbook i{
@@ -309,19 +312,69 @@ h2 {
     color: var(--fontPrimary);
 }
 
+
 .skillset {
     margin: 1rem 0;
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.languages img {
-    height: 90px;
-    width: 90px;
-}
-.card {
-    text-align: center;
-}
 .card h4{
-    margin: 10px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+.card .lang{
+    font-size: 75px;
+}
+
+.card {
+    position:relative;
+    align-items:flex-end;
+    transition: 0.4s ease-out;
+}
+.card:hover{
+    transform: translateY(10px);
+}
+.card::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card:hover::before{
+    opacity: 1;
+}
+.card .lang {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    border-radius: 5px;
+  }
+
+  .card h4 {
+    position: relative;
+    z-index: 3;
+    color:var(--fontPrimary);
+    font-size: 20px;
+    opacity: 0;
+    text-align: center;
+    transform: translateY(20px);
+    transition: 0.5s;
+  }
+
+.card:hover h4{
+    opacity: 1;
+    transform: translateY(0px);
 }
