@@ -50,6 +50,7 @@ h2 {
     color: var(--fontPrimary);
     height: 90px;
   }
+
   
 .navbar ul {
     display: flex;
@@ -390,6 +391,35 @@ h2 {
     margin: 1.5rem 0;
 }
 
+.workbook .icon{
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  justify-content: center;
+  line-height: 60px;
+  font-size: 40px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  background-color: var(--font3);
+  border: 3px solid var(--font3);
+  position: relative;
+  color: var(--primaryColor);
+}
+.workbook .icon:hover{
+  background-color: var(--primaryColor);
+  color: var(--font3);
+  transform: rotateY(360deg);
+}
+
+.workbook .freelanceskills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 /* Languages */
 
 .languages {
