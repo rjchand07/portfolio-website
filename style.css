@@ -376,13 +376,10 @@ h2 {
     font-size: 20px;
     font-weight: 400;
 }
-.freelancer-heading span{
+.freelancer-heading strong{
     color: var(--font3);
-}
-.freelance-span {
     font-weight: 600;
 }
-
 .workbook h4{
     color: var(--font3);
     font-size: 20px;
@@ -404,6 +401,10 @@ h2 {
     margin: 1rem 0;
     font-size: 20px;
     font-weight: 400;
+}
+.skillset strong{
+  color: var(--font3);
+  font-weight: 600;
 }
 
 .card h4{
