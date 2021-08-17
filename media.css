@@ -10,8 +10,11 @@
         margin: 0 20px;
     }
   
-    .navbar ul li {
+    .navbar ul li{
         margin-left: 5px;
+    }
+    .navbar ul li a:hover{
+        color: var(--font3);
     }
 
     .footer {
@@ -24,6 +27,9 @@
     }  
     .footer .social{
         margin-right:20px;
+    }
+    .footer #p1{
+        visibility: visible;
     }
 
     .languages .flex {
@@ -43,13 +49,15 @@
     .showcase-text{
         text-align: center;
         margin-top: 40px;
-        animation: slideInFromTop 1s ease-in;
     }
     .intro-image{
-        height: 100px;
-        width: 100px;
-        margin: 10px 150px;
+        height: 150px;
+        width: 150px;
+        margin: 10px 2600px;
         margin-bottom: 40px;
+    }
+    .btn-hire{
+        margin-top: -50px;
     }
     .workbook{
         height: auto;
@@ -70,6 +78,12 @@
     }
     nav {
         overflow: hidden;
+    }
+    .showcase h1{
+        font-size: 25px;
+    }
+    .wordCarousel{
+        visibility: hidden;
     }
 
 }
