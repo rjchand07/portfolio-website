@@ -296,6 +296,7 @@ h2 {
   .footer h1 {
       color: white;
       font-weight: 600;
+      margin-top: 30px;
   }
   .footer #p1{
     visibility: hidden;
